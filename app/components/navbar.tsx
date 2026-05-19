@@ -1,26 +1,8 @@
 "use client"
+import { navigationLinks } from "@/lib/data";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-
-const navbarLinks = [
-    {
-        label: "Classes",
-        href: "/classes"
-    },
-    {
-        label: "Personal Training",
-        href: "/personal-training"
-    },
-    {
-        label: "Memberships",
-        href: "/membership-plans"
-    },
-    {
-        label: "What We Offer",
-        href: "/what-we-offer"
-    }
-];
 
 export const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -36,9 +18,9 @@ export const Navbar = () => {
 
             <ul className="hidden xl:flex">
                 {
-                    navbarLinks.map((link, index) => (
-                        <li key={link.href + link.label} className={`px-6 border-l border-divider-gray flex items-center justify-center ${index < navbarLinks.length - 1 ? "border-r" : ""}`}>
-                            <Link href={link.href} aria-label={link.label} className="uppercase hover:text-brand-green">
+                    navigationLinks.map((link, index) => (
+                        <li key={link.href + link.label} className={`px-6 border-l border-divider-gray flex items-center justify-center ${index < navigationLinks.length - 1 ? "border-r" : ""}`}>
+                            <Link href={link.href} aria-label={link.label} className="uppercase hover:text-brand-green text-xs">
                                 {link.label}
                             </Link>
                         </li>
@@ -48,7 +30,7 @@ export const Navbar = () => {
 
             <ul className={`w-full h-screen bg-background absolute top-0 z-9 pt-25 flex flex-col items-center gap-10 transition-all duration-300 xl:hidden ${isOpen ? "translate-y-0" : "-translate-y-full pointer-events-none"}`}>
                 {
-                    navbarLinks.map((link) => (
+                    navigationLinks.map((link) => (
                         <li key={link.href + link.label} className={`flex items-center justify-center`}>
                             <Link href={link.href} aria-label={link.label} className="uppercase text-3xl font-medium">
                                 {link.label}
