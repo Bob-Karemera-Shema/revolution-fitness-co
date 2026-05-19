@@ -4,12 +4,14 @@
   --background: #000000;
   --foreground: #ffffff;
   --brand-green: #9eff38;
+  --divider-gray: #f6f6f6;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-brand-green: var(--brand-green);
+  --color-divider-gray: var(--divider-gray);
 }
 
 body {
