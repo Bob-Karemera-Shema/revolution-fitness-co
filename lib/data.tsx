@@ -5,11 +5,11 @@ export const navigationLinks = [
     },
     {
         label: "Personal Training",
-        href: "/personal-training"
+        href: "/#personal-training"
     },
     {
         label: "Memberships",
-        href: "/membership-plans"
+        href: "/#membership-plans"
     },
     {
         label: "What We Offer",
@@ -29,5 +29,47 @@ export const socialLinks = [
     {
         label: "X",
         href: "https://x.com/revolutionfit24"
+    }
+];
+
+export const membershipPlans = [
+    {
+        name: "Corporate",
+        price: "37.5",
+        description: "This membership is exclusively available to individuals working at the Science Park. On your first visit, please stop by reception for assistance and registration.",
+        frequency: "Monthly"
+    },
+    {
+        name: "Full",
+        price: "40",
+        description: "Access to the gym and all classes",
+        frequency: "Monthly"
+    },
+    {
+        name: "Student / NHS / Over 60s",
+        price: "32.5",
+        description: "Available for students, NHS workers, and individuals aged 60 and above. Proof of eligibility may be required, such as an NUS card, NHS ID, or driving licence. Membership includes full access to the gym and all classes.",
+        frequency: "Monthly"
+    }
+];
+
+export const trainers = [
+    {
+        name: "Roy Essandoh",
+        img: "/images/roy.jpg",
+        width: 640,
+        height: 480
+    },
+    {
+        name: "Adam Cook",
+        img: "/images/adam.jpg",
+        width: 640,
+        height: 480
+    },
+    {
+        name: "Rhys Webb",
+        img: "/images/rhys.jpg",
+        width: 383,
+        height: 287
     }
 ];
