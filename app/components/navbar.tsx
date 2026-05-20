@@ -12,7 +12,7 @@ export const Navbar = () => {
         <nav className="flex justify-between gap-4 h-20 border-b border-divider-gray relative">
             <div className="h-full border-r border-divider-gray">
                 <Link href="/" aria-label="Home">
-                    <Image src="/images/pri-logo-rect-trans.png" alt="Revolution Fitness Logo" width={8000} height={4500} className="w-auto h-full object-contain" />
+                    <Image src="/images/pri-logo-rect-trans.png" loading="eager" alt="Revolution Fitness Logo" width={8000} height={4500} className="w-auto h-full object-contain" />
                 </Link>
             </div>
 

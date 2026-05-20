@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
-import { Manrope } from "next/font/google";
+import { Manrope, Geist } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "./components/navbar";
 import { Footer } from "./components/footer";
+import { cn } from "@/lib/utils";
+
+const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -23,7 +26,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`h-full ${manrope.className}`}
+      className={cn("h-full", manrope.className, "font-sans", geist.variable)}
     >
       <body className="min-h-full">
         <Navbar />

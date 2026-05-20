@@ -58,13 +58,13 @@ export default function Home() {
 
       <section className="py-16 px-4 grid grid-cols-1 lg:grid-cols-3 gap-10 bg-foreground">
         <div className="relative h-80">
-          <Image src="/images/hyrox-badge.png" alt="Hyrox Badge" fill className="md:object-cover" />
+          <Image src="/images/hyrox-badge.png" alt="Hyrox Badge" fill sizes="w-full" className="md:object-cover" />
         </div>
         <div className="relative h-80">
-          <Image src="/images/functional-training.png" alt="Functional Training" fill className="md:object-cover" />
+          <Image src="/images/functional-training.png" alt="Functional Training" fill sizes="w-full" className="md:object-cover" />
         </div>
         <div className="relative h-80">
-          <Image src="/images/free-weights.png" alt="Free Weights" fill className="md:object-cover" />
+          <Image src="/images/free-weights.png" alt="Free Weights" fill sizes="w-full" className="md:object-cover" />
         </div>
       </section>
 
