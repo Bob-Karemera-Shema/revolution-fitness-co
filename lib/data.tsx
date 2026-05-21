@@ -56,18 +56,21 @@ export const membershipPlans = [
 export const trainers = [
     {
         name: "Roy Essandoh",
+        description: "Roy is an experienced fitness and sports performance specialist with expertise in weight training, strength and conditioning, sports performance, massage and sports therapy, and postural assessment and rehabilitation. With advanced qualifications in personal training, clinical sports therapy, nutrition, and athletic performance, Roy is dedicated to helping clients improve performance, recover effectively, and achieve their health and fitness goals.",
         img: "/images/roy.jpg",
         width: 640,
         height: 480
     },
     {
         name: "Adam Cook",
+        description: "Adam specialises in body composition and weight management, strength training, powerlifting, and nutrition guidance. With experience in powerlifting competition preparation and qualifications in personal training, exercise referral, and group fitness instruction, he helps clients build strength, improve performance, and work toward sustainable health and fitness goals.",
         img: "/images/adam.jpg",
         width: 640,
         height: 480
     },
     {
         name: "Rhys Webb",
+        description: "Rhys is passionate about health and fitness and brings energy and enthusiasm to every session. He enjoys leading group fitness classes and is always on the gym floor motivating and supporting members to achieve their goals. With qualifications in personal training, fitness instruction, circuit training, and kettlebell coaching, Rhys helps create a positive and encouraging environment for all fitness levels.",
         img: "/images/rhys.jpg",
         width: 383,
         height: 287
@@ -174,9 +177,33 @@ export const services = [
     {
         name: "PhysioBAB",
         description: "Our goal is to improve mobility and strength, relieve pain, and restore physical function to help you move and feel your best. We offer physiotherapy sessions and one-to-one Pilates classes tailored to individual needs, along with a range of massage treatments including Swedish, deep tissue, sports, and pregnancy massage. We also provide corporate massage services delivered directly at the workplace, offering both seated and table massage options. Corporate massage sessions can help improve employee wellbeing by reducing stress, boosting mood, and creating a healthier, more positive working environment.",
-        img: "/images/wellness.png",
-        width: 4500,
-        height: 4500,
+        img: "/images/physiobab.avif",
+        width: 1638,
+        height: 868,
         href: "https://www.physiobab.com"
+    },
+    {
+        name: "Trinity Baristas",
+        description: "The perfect place to enjoy freshly prepared meals, quality coffee, and a welcoming atmosphere. Whether you are looking for a quick breakfast, a healthy lunch, your favourite coffee, or simply a place to unwind, we offer a range of fresh and delicious options made with quality ingredients.",
+        img: "/images/trinity-baristas.png",
+        width: 503,
+        height: 503,
+        href: "https://thetrinitycentre.uk.com"
+    },
+    {
+        name: "Park Barbers",
+        description: "Looking for a fresh new haircut or a perfectly groomed beard? Visit Park Barbers at the Trinity Centre and meet Charlie and Antonio, our experienced barbers dedicated to helping you look and feel your best. With years of experience and expertise across all hair types and styles, they provide professional grooming services tailored to your individual preferences. Whether you are after a classic cut, a modern style, a beard trim, or a complete refresh, Park Barbers offers a friendly and welcoming environment where quality and attention to detail come first.",
+        img: "/images/park-barbers.jpg",
+        width: 1600,
+        height: 900,
+        href: "https://booksy.com/en-gb/48267_park-barbers_barber_148251_cambridge"
+    },
+    {
+        name: "Brazilian Top Team Cambridge",
+        description: "At Brazilian Top Team Cambridge, we provide high-level Brazilian Jiu Jitsu instruction in a welcoming and supportive environment. With flexible class schedules and accessible pricing, we make it easier for everyone to train, regardless of experience level or goals. Whether you are looking to learn a new skill, improve your fitness, challenge yourself in competition, or simply enjoy the sport, our classes are designed to help you grow and progress at your own pace.",
+        img: "/images/btt-cambridge.png",
+        width: 512,
+        height: 512,
+        href: "https://bttcambridge.com"
     }
 ];

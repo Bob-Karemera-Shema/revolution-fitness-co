@@ -45,7 +45,7 @@ export default function Home() {
         </article>
 
         <article className="w-full flex flex-col lg:flex-row lg:items-center gap-20 justify-between p-10 lg:pr-16">
-          <p className="max-w-150 w-full">
+          <p className="max-w-150 w-full font-medium">
             Whether your goal is weight loss, building strength, or improving overall fitness, we offer a wide range of functional and studio classes designed for all fitness levels. From high-energy conditioning sessions to performance-focused workouts, explore classes such as Hyrox, HIIT, Body Blast, and more to help you reach your goals.
           </p>
           <Link href="/classes" aria-label="Classes" className="lg:self-end">
@@ -77,7 +77,7 @@ export default function Home() {
         </article>
 
         <article className="w-full flex flex-col lg:flex-row lg:items-center gap-20 justify-between p-10 lg:pr-16">
-          <p className="max-w-150 w-full">
+          <p className="max-w-150 w-full font-medium">
             Join today and start working toward your health and fitness goals. Please note that one month&apos;s written notice is required to cancel a membership. We are an adult-only gym, and membership is available to individuals aged 18 and above.
           </p>
           <Link href="/membership-plans" aria-label="Membership Plans" className="lg:self-end">
@@ -103,7 +103,7 @@ export default function Home() {
         </article>
 
         <article className="w-full flex lg:items-center gap-20 p-10 lg:pr-16">
-          <p>
+          <p className="font-medium">
             Our team of personal trainers brings together over 30 years of combined experience, with expertise in strength and conditioning as well as mobility training. Let our highly qualified trainers create a realistic, personalised, and achievable programme tailored to help you reach your goals in both the gym and studio environment.
           </p>
         </article>
@@ -117,6 +117,7 @@ export default function Home() {
                 <Image src={trainer.img} alt={trainer.name} width={trainer.width} height={trainer.height} className="w-full object-cover group-hover:scale-110 transition-transform duration-300 ease-in-out" />
               </div>
               <h3 className="text-2xl font-extrabold px-2 uppercase">{trainer.name}</h3>
+              <p className="px-2 font-medium">{trainer.description}</p>
             </article>
           ))
         }
