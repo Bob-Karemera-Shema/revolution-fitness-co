@@ -9,7 +9,7 @@ export const navigationLinks = [
     },
     {
         label: "Memberships",
-        href: "/#membership-plans"
+        href: "/membership-plans"
     },
     {
         label: "What We Offer",
@@ -35,19 +35,37 @@ export const socialLinks = [
 export const membershipPlans = [
     {
         name: "Corporate",
-        price: "37.5",
+        price: "37.50",
         description: "This membership is exclusively available to individuals working at the Science Park. On your first visit, please stop by reception for assistance and registration.",
         frequency: "Monthly"
     },
     {
+        name: "Foundation (UL Classes Gym)",
+        price: "70.00",
+        description: "Get unlimited access to Classes & Gym",
+        frequency: "Monthly"
+    },
+    {
         name: "Full",
-        price: "40",
-        description: "Access to the gym and all classes",
+        price: "40.00",
+        description: "Unlimited access to the gym",
+        frequency: "Monthly"
+    },
+    {
+        name: "Full (UL Classes Gym)",
+        price: "90.00",
+        description: "Get unlimited access to Classes & Gym",
+        frequency: "Monthly"
+    },
+    {
+        name: "Park (UL Classes Gym)",
+        price: "81.00",
+        description: "Get Unlimited access to Classes & Gym",
         frequency: "Monthly"
     },
     {
         name: "Student / NHS / Over 60s",
-        price: "32.5",
+        price: "32.50",
         description: "Available for students, NHS workers, and individuals aged 60 and above. Proof of eligibility may be required, such as an NUS card, NHS ID, or driving licence. Membership includes full access to the gym and all classes.",
         frequency: "Monthly"
     }
@@ -149,13 +167,6 @@ export const services = [
         name: "Functional Fitness Classes",
         description: "Our brand-new functional training space is designed for all fitness levels, combining performance-driven coaching with adaptable HYROX training, conditioning, and functional strength work. Whether you are just beginning your fitness journey or training to compete, our expert coaches create an inclusive, high-energy environment focused on helping you move better, train smarter, and perform at your best.",
         img: "/images/functional.png",
-        width: 4500,
-        height: 4500
-    },
-    {
-        name: "Studio Classes",
-        description: "Whether your goal is weight loss, toning, or building strength, we offer an excellent range of studio classes suitable for all fitness levels. From high-energy sessions like Box-Fit and Spin Circuit to targeted conditioning classes such as Legs, Bums & Tums, Body Blast, Kettlebells, and Ab Attack, there is something for everyone to help you stay motivated and reach your goals.",
-        img: "/images/revolution-gym.png",
         width: 4500,
         height: 4500
     },

@@ -14,7 +14,8 @@ export const MembershipCard = ({ data }: MembershipCardProps) => {
     return (
         <div className="flex flex-col items-center justify-between gap-8 py-8 px-10 border border-divider-gray">
             <div className="flex flex-col items-center gap-8">
-                <span className="font-bold uppercase">{data.frequency}</span>
+                <span className="font-bold uppercase text-brand-green">{data.frequency}</span>
+                <span className="font-bold uppercase text-xl">{data.name}</span>
                 <div className="text-brand-green font-bold flex flex-col">
                     <span className="text-xl">£</span>
                     <span className="text-6xl pl-4 -mt-2">{data.price}</span>

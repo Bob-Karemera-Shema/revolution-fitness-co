@@ -1,38 +1,32 @@
 import Image from "next/image";
 import { Button } from "./components/button";
 import Link from "next/link";
-import { membershipPlans, trainers } from "@/lib/data";
-import { MembershipCard } from "./components/membershipCard";
+import { trainers } from "@/lib/data";
 
 export default function Home() {
   return (
     <main>
       <section>
-        <article className="flex items-center justify-center uppercase font-bold text-5xl md:text-8xl text-center py-8 border-b border-divider-gray">
-          <p>Achieve your health and fitness goals</p>
-        </article>
-        <article className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-          <div className="flex flex-col justify-between gap-4 p-10 pb-16 md:border-r border-divider-gray">
-            <div className="space-y-8">
-              <h1 className="text-4xl flex flex-col">
-                <span>Revolution Fitness Co.,</span>
-                <span>the Science Park&apos;s fitness hub</span>
-              </h1>
-
-              <p className="leading-8 font-medium">
-                We are committed to helping you achieve your health and fitness goals. With a team of experienced trainers and state-of-the-art facilities, we provide the guidance, support, and resources you need to stay motivated and succeed on your fitness journey.
-              </p>
-            </div>
+        <article className="relative w-full h-[80vh] flex items-center justify-center">
+          <video
+            src='/images/hero-video.mov'
+            className="absolute inset-0 w-full h-full object-cover"
+            muted
+            autoPlay
+            loop
+            playsInline
+          />
+          <div className="relative z-10 text-center text-white px-4 space-y-8">
+            <h1 className="uppercase text-3xl font-extrabold">Revolution Fitness Co.</h1>
             <Link href="https://secure17.clubwise.com/revolutionhealthandfitnesscentre/pos.asp" target="_blank" rel="noopener noreferrer" aria-label="Sign Up">
               <Button type="primary" className="w-fit">
                 Join Now
               </Button>
             </Link>
           </div>
-
-          <div className="lg:col-span-2">
-            <Image src="/images/pri-logo-rect-trans.png" alt="Revolution Fitness Co. Logo" width={8000} height={4500} />
-          </div>
+        </article>
+        <article className="flex flex-col items-center justify-center gap-8 px-8 py-16 border-b border-t border-divider-gray">
+          <p className="text-3xl text-center max-w-5xl mx-auto">{`Revolution isn't just a gym. It's a place where people show up for each other. Where every rep, every drop of sweat, and every small win is `}<span className="text-brand-green font-bold">shared</span>{`. We believe `}<span className="text-brand-green font-bold">strength</span>{` isn't built alone; it grows in the energy of a `}<span className="text-brand-green font-bold">community</span>{` that lifts, pushes, and `}<span className="text-brand-green font-bold">supports</span>{` one another.`}</p>
         </article>
       </section>
 
@@ -82,16 +76,22 @@ export default function Home() {
           </p>
           <Link href="/membership-plans" aria-label="Membership Plans" className="lg:self-end">
             <Button type="primary" className="w-fit">
-              Sign Up Now
+              View Membership Plans
             </Button>
           </Link>
         </article>
       </section>
 
-      <section className="py-16 px-4 grid grid-cols-1 lg:grid-cols-3 gap-10">
-        {
-          membershipPlans.map((plan) => <MembershipCard key={plan.name} data={plan} />)
-        }
+      <section className="h-160 w-full relative">
+        <Image src="/images/studio-coming-1.jpg" alt="Studio Coming Soon" width={1280} height={853} className="absolute inset-0 w-full h-full object-cover" />
+        <div className="w-full h-full relative z-10 flex flex-col items-center justify-center gap-4 text-center bg-black/40">
+        <h2 className="text-5xl uppercase font-bold tracking-tighter text-brand-green">
+          Studio Space Coming Soon!
+        </h2>
+        <p className="text-xl font-medium max-w-2xl">
+          Stay tuned for our new state-of-the-art studio space, for more classes and personal training options to achieve your fitness goals.
+        </p>
+        </div>
       </section>
 
       <section id="personal-training" className="flex flex-col lg:flex-row bg-foreground text-background border-b border-background">
