@@ -40,7 +40,7 @@ export default function Home() {
 
         <article className="w-full flex flex-col lg:flex-row lg:items-center gap-20 justify-between p-10 lg:pr-16">
           <p className="max-w-150 w-full font-medium">
-            Whether your goal is weight loss, building strength, or improving overall fitness, we offer a wide range of functional and studio classes designed for all fitness levels. From high-energy conditioning sessions to performance-focused workouts, explore classes such as Hyrox, HIIT, Body Blast, and more to help you reach your goals.
+            We offer functional fitness classes for everyone, from beginners to athletes. Our classes range from strength and conditioning to Hyrox and team workouts called Club work. The classes are well programmed for anyone looking for more structure in their training but also gives the flexibility to anyone that may like the option to do a drop in class. Whatever the goal, we are here to help.
           </p>
           <Link href="/classes" aria-label="Classes" className="lg:self-end">
             <Button type="secondary" className="w-fit">
