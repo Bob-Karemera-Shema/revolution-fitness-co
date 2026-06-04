@@ -2,6 +2,20 @@ import Image from "next/image";
 import { Button } from "./components/button";
 import Link from "next/link";
 import { trainers } from "@/lib/data";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Revolution Fitness Co. | Gym in Cambridge Science Park",
+  description:
+    "Community-driven gym at Cambridge Science Park. Functional fitness, Hyrox, free weights, studio classes and personal training for adults 18+.",
+  alternates: { canonical: "/" },
+  openGraph: {
+    title: "Revolution Fitness Co. | Gym in Cambridge Science Park",
+    description:
+      "Community-driven gym at Cambridge Science Park. Functional fitness, Hyrox, free weights, studio classes and personal training for adults 18+.",
+    url: "/",
+  },
+};
 
 export default function Home() {
   return (
@@ -83,13 +97,13 @@ export default function Home() {
       </section>
 
       <section className="h-160 w-full relative">
-        <Image src="/images/studio-coming-1.jpg" alt="Studio Coming Soon" width={1280} height={853} className="absolute inset-0 w-full h-full object-cover" />
+        <Image src="/images/studio-coming.jpg" loading="eager" alt="Studio Coming Soon" width={1280} height={853} className="absolute inset-0 w-full h-full object-cover" />
         <div className="w-full h-full relative z-10 flex flex-col items-center justify-center gap-4 text-center bg-black/40">
         <h2 className="text-5xl uppercase font-bold tracking-tighter text-brand-green">
-          Studio Space Coming Soon!
+          Brand New Gym Coming Soon
         </h2>
         <p className="text-xl font-medium max-w-2xl">
-          Stay tuned for our new state-of-the-art studio space, for more classes and personal training options to achieve your fitness goals.
+          Stay tuned for our new upgraded gym including elegantly designed spaces, fueled by Techno GYM equipment.
         </p>
         </div>
       </section>

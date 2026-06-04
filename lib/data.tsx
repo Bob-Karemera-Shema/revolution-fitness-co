@@ -29,6 +29,10 @@ export const socialLinks = [
     {
         label: "X",
         href: "https://x.com/revolutionfit24"
+    },
+    {
+        label: "LinkedIn",
+        href: "https://uk.linkedin.com/company/revolution-health-&-fitness-club-limited"
     }
 ];
 

@@ -1,5 +1,19 @@
 import { membershipPlans } from "@/lib/data";
 import { MembershipCard } from "../components/membershipCard";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Membership Plans",
+  description:
+    "Explore Revolution Fitness Co. membership plans, including Corporate, Foundation and full-access options. Adults 18+; one month written notice to cancel.",
+  alternates: { canonical: "/membership-plans" },
+  openGraph: {
+    title: "Membership Plans | Revolution Fitness Co.",
+    description:
+      "Explore Revolution Fitness Co. membership plans, including Corporate, Foundation and full-access options.",
+    url: "/membership-plans",
+  },
+};
 
 export default function MembershipPlans() {
     return (

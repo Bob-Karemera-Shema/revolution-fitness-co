@@ -2,6 +2,20 @@ import { services } from "@/lib/data";
 import Image from "next/image";
 import { Button } from "../components/button";
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "What We Offer",
+  description:
+    "Discover what Revolution Fitness Co. offers in Cambridge: Hyrox training, functional fitness, free weights, PhysioBab recovery, wellness and more.",
+  alternates: { canonical: "/what-we-offer" },
+  openGraph: {
+    title: "What We Offer | Revolution Fitness Co.",
+    description:
+      "Hyrox, functional fitness, free weights, PhysioBab recovery, wellness and more at Revolution Fitness Co. in Cambridge.",
+    url: "/what-we-offer",
+  },
+};
 
 export default function WhatWeOffer() {
     return (
