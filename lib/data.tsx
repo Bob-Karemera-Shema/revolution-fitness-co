@@ -3,10 +3,10 @@ export const navigationLinks = [
         label: "Classes",
         href: "/classes"
     },
-    {
-        label: "Personal Training",
-        href: "/#personal-training"
-    },
+    // {
+    //     label: "Personal Training",
+    //     href: "/#personal-training"
+    // },
     {
         label: "Memberships",
         href: "/membership-plans"
