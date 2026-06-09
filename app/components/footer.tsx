@@ -50,12 +50,12 @@ export const Footer = () => {
                         </div>
                     </div>
 
-                    <div className="grid grid-cols-2 lg:grid-cols-1 gap-10 md:gap-20">
+                    <div className="grid grid-cols-1 gap-10 md:gap-20">
                         <div className="space-y-2">
                             <p className="uppercase text-lg font-extrabold">Gym Hours</p>
                             <ul className="space-y-1">
                                 <li>Mon - Fri: 7:00am - 8:00pm</li>
-                                <li>Sat: 8:00am - 1:00pm</li>
+                                <li>Sat: 8:00am - 12:00pm</li>
                                 <li>Sun / Bank Holidays: Closed</li>
                             </ul>
                         </div>
@@ -63,6 +63,7 @@ export const Footer = () => {
                         <div className="space-y-2">
                             <p className="uppercase text-lg font-extrabold">Address</p>
                             <ul className="space-y-1">
+                                <li>Email: info@revolutionhealthfitness.co.uk</li>
                                 <li>24 Cambridge Science Park Milton Rd,</li>
                                 <li>Milton, Cambridge CB4 0FN</li>
                             </ul>

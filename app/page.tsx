@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { Button } from "./components/button";
 import Link from "next/link";
-import { trainers } from "@/lib/data";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -108,7 +107,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="personal-training" className="flex flex-col lg:flex-row bg-foreground text-background border-b border-background">
+      {/* <section id="personal-training" className="flex flex-col lg:flex-row bg-foreground text-background border-b border-background">
         <article className="p-10 pb-0 lg:pb-10 lg:pl-16 lg:pr-5 lg:border-r border-background">
           <h2 className="flex flex-col text-5xl uppercase font-extrabold tracking-tighter md:whitespace-nowrap">
             <span>Meet our</span>
@@ -135,7 +134,7 @@ export default function Home() {
             </article>
           ))
         }
-      </section>
+      </section> */}
     </main>
   );
 }

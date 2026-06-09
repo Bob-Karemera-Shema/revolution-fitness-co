@@ -43,12 +43,12 @@ export const membershipPlans = [
         description: "This membership is exclusively available to individuals working at the Science Park. On your first visit, please stop by reception for assistance and registration.",
         frequency: "Monthly"
     },
-    {
-        name: "Foundation (UL Classes Gym)",
-        price: "70.00",
-        description: "Get unlimited access to Classes & Gym",
-        frequency: "Monthly"
-    },
+    // {
+    //     name: "Foundation (UL Classes Gym)",
+    //     price: "70.00",
+    //     description: "Get unlimited access to Classes & Gym",
+    //     frequency: "Monthly"
+    // },
     {
         name: "Full",
         price: "40.00",
