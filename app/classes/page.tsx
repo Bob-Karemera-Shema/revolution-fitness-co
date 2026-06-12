@@ -52,16 +52,43 @@ export default function About() {
             </div>
 
             <section className="px-10 md:px-20">
-                <table className="w-full table-fixed">
+                {/* Mobile: card layout per day */}
+                <div className="lg:hidden space-y-4">
+                    {filteredSchedule.map((day) => (
+                        <div key={day.day} className="border border-gray-600">
+                            <h3 className="font-bold text-center py-2 border-b border-gray-600 uppercase tracking-wide">
+                                {day.day}
+                            </h3>
+                            {day.classes.length > 0 ? (
+                                <div className="divide-y divide-gray-600">
+                                    {day.classes.map((cls) => (
+                                        <div key={cls.time + cls.name} className="py-4 px-4 space-y-2 font-bold">
+                                            <p>{cls.time}</p>
+                                            <p>{cls.name}</p>
+                                            <Link href="https://play.google.com/store/apps/details?id=clubwise.com.fitsense" target="_blank" rel="noopener noreferrer" aria-label="Sign Up" className="pt-2 block">
+                                                <Button type="primary" className="w-fit">
+                                                    Book Now
+                                                </Button>
+                                            </Link>
+                                        </div>
+                                    ))}
+                                </div>
+                            ) : (
+                                <p className="py-4 px-4 text-gray-400 text-sm">No classes</p>
+                            )}
+                        </div>
+                    ))}
+                </div>
+
+                {/* Desktop: table layout */}
+                <table className="hidden lg:table w-full table-fixed">
                     <thead>
                         <tr>
-                            {
-                                filteredSchedule.map((day, index) => (
-                                    <th key={day.day + index} className="text-center">
-                                        {day.day}
-                                    </th>
-                                ))
-                            }
+                            {filteredSchedule.map((day, index) => (
+                                <th key={day.day + index} className="text-center">
+                                    {day.day}
+                                </th>
+                            ))}
                         </tr>
                     </thead>
                     <tbody>
@@ -73,19 +100,17 @@ export default function About() {
                                         const cls = day.classes[rowIndex];
                                         return (
                                             <td key={day.day} className="py-4 px-4 space-y-2 border border-gray-600 font-bold">
-                                                {
-                                                    cls && (
-                                                        <>
-                                                            <p>{cls.time}</p>
-                                                            <p>{cls.name}</p>
-                                                            <Link href="https://play.google.com/store/apps/details?id=clubwise.com.fitsense" target="_blank" rel="noopener noreferrer" aria-label="Sign Up" className="pt-2">
-                                                                <Button type="primary" className="w-fit">
-                                                                    Book Now
-                                                                </Button>
-                                                            </Link>
-                                                        </>
-                                                    )
-                                                }
+                                                {cls && (
+                                                    <>
+                                                        <p>{cls.time}</p>
+                                                        <p>{cls.name}</p>
+                                                        <Link href="https://play.google.com/store/apps/details?id=clubwise.com.fitsense" target="_blank" rel="noopener noreferrer" aria-label="Sign Up" className="pt-2">
+                                                            <Button type="primary" className="w-fit">
+                                                                Book Now
+                                                            </Button>
+                                                        </Link>
+                                                    </>
+                                                )}
                                             </td>
                                         );
                                     })}
