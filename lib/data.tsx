@@ -49,12 +49,12 @@ export const membershipPlans = [
     //     description: "Get unlimited access to Classes & Gym",
     //     frequency: "Monthly"
     // },
-    {
-        name: "Full",
-        price: "40.00",
-        description: "Unlimited access to the gym",
-        frequency: "Monthly"
-    },
+    // {
+    //     name: "Full",
+    //     price: "40.00",
+    //     description: "Unlimited access to the gym",
+    //     frequency: "Monthly"
+    // },
     {
         name: "Full (UL Classes Gym)",
         price: "90.00",
@@ -67,11 +67,17 @@ export const membershipPlans = [
         description: "Get Unlimited access to Classes & Gym",
         frequency: "Monthly"
     },
+    // {
+    //     name: "Student / NHS / Over 60s",
+    //     price: "32.50",
+    //     description: "Available for students, NHS workers, and individuals aged 60 and above. Proof of eligibility may be required, such as an NUS card, NHS ID, or driving licence. Membership includes full access to the gym and all classes.",
+    //     frequency: "Monthly"
+    // },
     {
-        name: "Student / NHS / Over 60s",
-        price: "32.50",
-        description: "Available for students, NHS workers, and individuals aged 60 and above. Proof of eligibility may be required, such as an NUS card, NHS ID, or driving licence. Membership includes full access to the gym and all classes.",
-        frequency: "Monthly"
+        name: "1 Day Pass",
+        price: "20.00",
+        description: "Pay as you go",
+        frequency: "Daily"
     }
 ];
 
@@ -144,11 +150,11 @@ export const classSchedule = [
     {
         day: "Fri",
         classes: [
-            { time: "7:00 am", name: "Sweat or Lift", type: "functional" },
-            { time: "7:15 am", name: "Abs", type: "studio" },
-            { time: "12:15 pm", name: "Sweat or Lift", type: "functional" },
-            { time: "12:15 pm", name: "Hybrid", type: "studio" },
-            { time: "5:30 pm", name: "Hyrox", type: "functional" },
+            { time: "7:00 am", name: "Lift & Sweat", type: "functional" },
+            { time: "7:15 am", name: "Lift & Sweat", type: "functional" },
+            { time: "12:15 pm", name: "Lift & Sweat", type: "functional" },
+            { time: "12:15 pm", name: "Lift & Sweat", type: "functional" },
+            { time: "5:30 pm", name: "Lift & Sweat", type: "functional" },
         ]
     },
     {

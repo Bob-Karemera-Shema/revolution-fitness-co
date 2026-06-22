@@ -61,8 +61,8 @@ export default function About() {
                             </h3>
                             {day.classes.length > 0 ? (
                                 <div className="divide-y divide-gray-600">
-                                    {day.classes.map((cls) => (
-                                        <div key={cls.time + cls.name} className="py-4 px-4 space-y-2 font-bold">
+                                    {day.classes.map((cls, index) => (
+                                        <div key={cls.time + cls.name + index} className="py-4 px-4 space-y-2 font-bold">
                                             <p>{cls.time}</p>
                                             <p>{cls.name}</p>
                                             <Link href="https://play.google.com/store/apps/details?id=clubwise.com.fitsense" target="_blank" rel="noopener noreferrer" aria-label="Sign Up" className="pt-2 block">
@@ -96,10 +96,10 @@ export default function About() {
                             { length: Math.max(0, ...filteredSchedule.map(d => d.classes.length)) },
                             (_, rowIndex) => (
                                 <tr key={rowIndex}>
-                                    {filteredSchedule.map((day) => {
+                                    {filteredSchedule.map((day, dayIndex) => {
                                         const cls = day.classes[rowIndex];
                                         return (
-                                            <td key={day.day} className="py-4 px-4 space-y-2 border border-gray-600 font-bold">
+                                            <td key={day.day + dayIndex + rowIndex} className="py-4 px-4 space-y-2 border border-gray-600 font-bold">
                                                 {cls && (
                                                     <>
                                                         <p>{cls.time}</p>

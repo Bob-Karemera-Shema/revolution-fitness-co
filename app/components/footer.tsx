@@ -12,9 +12,11 @@ export const Footer = () => {
                     <p className="-mt-15 mb-10 font-medium">
                         Join Now for £40/month
                     </p>
-                    <Button type="primary">
-                        Get Started
-                    </Button>
+                    <Link href="https://secure17.clubwise.com/revolutionhealthandfitnesscentre/pos.asp" target="_blank" rel="noopener noreferrer" aria-label="Sign Up">
+                        <Button type="primary">
+                            Get Started
+                        </Button>
+                    </Link>
                 </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
