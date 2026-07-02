@@ -38,45 +38,33 @@ export const socialLinks = [
 
 export const membershipPlans = [
     {
-        name: "Corporate",
-        price: "37.50",
-        description: "This membership is exclusively available to individuals working at the Science Park. On your first visit, please stop by reception for assistance and registration.",
+        name: "Park Member (Gym only)",
+        price: "45.00",
+        description: "Full access to the gym - This membership is exclusively available to individuals working at the Science Park or NHS, or to those aged over 60. Please stop by the gym and speak to one of the team to sign up.",
         frequency: "Monthly"
     },
-    // {
-    //     name: "Foundation (UL Classes Gym)",
-    //     price: "70.00",
-    //     description: "Get unlimited access to Classes & Gym",
-    //     frequency: "Monthly"
-    // },
-    // {
-    //     name: "Full",
-    //     price: "40.00",
-    //     description: "Unlimited access to the gym",
-    //     frequency: "Monthly"
-    // },
     {
-        name: "Full (UL Classes Gym)",
+        name: "Gym only",
+        price: "50.00",
+        description: "Full access to the gym",
+        frequency: "Monthly"
+    },
+    {
+        name: "Park Member (Unlimited classes & full access to the gym)",
+        price: "81.00",
+        description: "This membership is exclusively available to individuals working at the Science Park or NHS, or to those aged over 60. Please stop by the gym and speak to one of the team to sign up.",
+        frequency: "Monthly"
+    },
+    {
+        name: "Full (Unlimited classes & full access to the gym)",
         price: "90.00",
         description: "Get unlimited access to Classes & Gym",
         frequency: "Monthly"
     },
     {
-        name: "Park (UL Classes Gym)",
-        price: "81.00",
-        description: "Get Unlimited access to Classes & Gym",
-        frequency: "Monthly"
-    },
-    // {
-    //     name: "Student / NHS / Over 60s",
-    //     price: "32.50",
-    //     description: "Available for students, NHS workers, and individuals aged 60 and above. Proof of eligibility may be required, such as an NUS card, NHS ID, or driving licence. Membership includes full access to the gym and all classes.",
-    //     frequency: "Monthly"
-    // },
-    {
         name: "1 Day Pass",
         price: "20.00",
-        description: "Pay as you go",
+        description: "Pay as you go classes",
         frequency: "Daily"
     }
 ];
@@ -151,8 +139,6 @@ export const classSchedule = [
         day: "Fri",
         classes: [
             { time: "7:00 am", name: "Lift & Sweat", type: "functional" },
-            { time: "7:15 am", name: "Lift & Sweat", type: "functional" },
-            { time: "12:15 pm", name: "Lift & Sweat", type: "functional" },
             { time: "12:15 pm", name: "Lift & Sweat", type: "functional" },
             { time: "5:30 pm", name: "Lift & Sweat", type: "functional" },
         ]

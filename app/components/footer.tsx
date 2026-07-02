@@ -10,7 +10,7 @@ export const Footer = () => {
                 <div className="w-75">
                     <Image src="/images/pri-logo-square-trans.png" loading="eager" alt="Revolution Fitness Co. logo" width={8000} height={4500} className="-ml-10 -mt-18 md:-mt-23" />
                     <p className="-mt-15 mb-10 font-medium">
-                        Join Now for £40/month
+                        Join Now
                     </p>
                     <Link href="https://secure17.clubwise.com/revolutionhealthandfitnesscentre/pos.asp" target="_blank" rel="noopener noreferrer" aria-label="Sign Up">
                         <Button type="primary">
