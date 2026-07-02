@@ -26,9 +26,13 @@ export default function MembershipPlans() {
         Monthly Direct Debit
       </h1>
 
-      <section className="px-4 grid grid-cols-1 lg:grid-cols-3 gap-10">
+      <section className="px-4 flex flex-wrap justify-center gap-10">
         {
-          membershipPlans.filter(plan => plan.frequency.toLowerCase() === "monthly").map((plan) => <MembershipCard key={plan.name} data={plan} />)
+          membershipPlans.filter(plan => plan.frequency.toLowerCase() === "monthly").map((plan) => (
+            <div key={plan.name} className="w-full lg:w-100">
+              <MembershipCard data={plan} />
+            </div>
+          ))
         }
       </section>
 
