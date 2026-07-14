@@ -40,7 +40,7 @@ export const membershipPlans = [
     {
         name: "Park Member (Gym only)",
         price: "45.00",
-        description: "Full access to the gym - This membership is exclusively available to individuals working at the Science Park or NHS, or to those aged over 60. Please stop by the gym and speak to one of the team to sign up.",
+        description: "Full access to the gym - This membership is exclusively available to individuals working at the Science Park, students, NHS employees, or to those aged over 60. Please stop by the gym and speak to one of the team to sign up.",
         frequency: "Monthly"
     },
     {
