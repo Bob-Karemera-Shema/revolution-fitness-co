@@ -2,7 +2,7 @@
 import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import Link from "next/link";
 import { Button } from "../components/button";
-import { classSchedule } from "@/lib/data";
+import { classDescriptions, classSchedule } from "@/lib/data";
 import { useState } from "react";
 
 export default function About() {
@@ -119,6 +119,34 @@ export default function About() {
                         )}
                     </tbody>
                 </table>
+            </section>
+
+            <h2 className="mt-20 text-3xl uppercase text-center font-bold mx-10 md:mx-20 pb-4 border-b border-gray-600">
+                Class Breakdown
+            </h2>
+
+            <section className="px-10 md:px-20 flex flex-wrap justify-center gap-4">
+                {
+                    classDescriptions.map(classType => (
+                        <div key={classType.name} className="w-full max-w-75 space-y-4">
+                            <h3 className="uppercase font-bold text-lg">
+                                {classType.name}
+                            </h3>
+                            <div className="space-y-1 w-full">
+                                {
+                                    classType.desc.map(desc =>
+                                        <div key={classType.name + desc} className="w-full flex gap-2">
+                                            <div className="w-1.5 h-1.5 shrink-0 bg-white rounded-full mt-2.25" />
+                                            <span className="">
+                                                {desc}
+                                            </span>
+                                        </div>
+                                    )
+                                }
+                            </div>
+                        </div>
+                    ))
+                }
             </section>
         </main>
     );

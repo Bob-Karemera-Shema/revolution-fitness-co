@@ -40,12 +40,14 @@ export default function MembershipPlans() {
         Short Term
       </h1>
 
-      <section className="pb-16 px-4 grid grid-cols-1 lg:grid-cols-3 gap-10">
-        <div />
+      <section className="pb-16 px-4 flex flex-wrap justify-center gap-10">
         {
-          membershipPlans.filter(plan => plan.frequency.toLowerCase() === "daily").map((plan) => <MembershipCard key={plan.name} data={plan} />)
+          membershipPlans.filter(plan => plan.frequency.toLowerCase() === "daily" || plan.frequency.toLowerCase() === "10 days").map((plan) => (
+            <div key={plan.name} className="w-full lg:w-100">
+              <MembershipCard data={plan} />
+            </div>
+          ))
         }
-        <div />
       </section>
     </main>
   );

@@ -23,14 +23,6 @@ export const socialLinks = [
         href: "https://www.instagram.com/revolutionhealthfitness"
     },
     {
-        label: "Facebook",
-        href: "https://www.facebook.com/Revolution-Health-Fitness-Club-1460049640917127"
-    },
-    {
-        label: "X",
-        href: "https://x.com/revolutionfit24"
-    },
-    {
         label: "LinkedIn",
         href: "https://uk.linkedin.com/company/revolution-health-&-fitness-club-limited"
     }
@@ -60,6 +52,12 @@ export const membershipPlans = [
         price: "90.00",
         description: "Get unlimited access to Classes & Gym",
         frequency: "Monthly"
+    },
+    {
+        name: "10 Day Trail",
+        price: "30.00",
+        description: "This 10 day trial is designed for you to see if we fit into your routine, experience a new training style, meet the coaching team and be part of our community. To get set up please email or pop by the gym.",
+        frequency: "10 Days"
     },
     {
         name: "1 Day Pass",
@@ -98,7 +96,7 @@ export const classSchedule = [
         day: "Mon",
         classes: [
             { time: "7:00 am", name: "Hyrox", type: "functional" },
-            { time: "12:15 pm", name: "Conditioning", type: "functional" },
+            { time: "12:15 pm", name: "Hyrox", type: "functional" },
             { time: "12:15 pm", name: "Body Con", type: "studio" },
             { time: "5:30 pm", name: "Hyrox", type: "functional" },
             { time: "5:30 pm", name: "Bootcamp", type: "studio" },
@@ -119,7 +117,7 @@ export const classSchedule = [
         day: "Wed",
         classes: [
             { time: "7:00 am", name: "Conditioning", type: "functional" },
-            { time: "12:15 pm", name: "Hyrox", type: "functional" },
+            { time: "12:15 pm", name: "Conditioning", type: "functional" },
             { time: "5:30 pm", name: "Conditioning", type: "functional" },
             { time: "5:30 pm", name: "HIIT", type: "studio" },
         ]
@@ -212,5 +210,48 @@ export const services = [
         width: 512,
         height: 512,
         href: "https://bttcambridge.com"
+    }
+];
+
+export const classDescriptions = [
+    {
+        name: "Hyrox",
+        desc: [
+            "Endurance Strength",
+            "Running",
+            "Compromised Running",
+            "Grip Strength",
+            "Lactate Tolerance",
+            "Pace Strategy"
+        ]
+    },
+    {
+        name: "Conditioning",
+        desc: [
+            "Power Agility",
+            "Plyometrics",
+            "Full Body Work",
+            "Testing Recovery",
+            "Functional Strength"
+        ]
+    },
+    {
+        name: "Functional Strength",
+        desc: [
+            "Progressive Overload",
+            "Linear Training",
+            "Pyramid Training",
+            "Circuit Training",
+            "Supersets",
+            "Isometric Work",
+            "½ reps, Pulse reps and Pause"
+        ]
+    },
+    {
+        name: "Club Work",
+        desc: [
+            "Club Work brings the best of fitness and community together. Working in pairs or teams of 3–5, you'll take on the workout of the day, sharing the load and pushing each other every step of the way.",
+            "Every team has one goal: finish the workout together. It's challenging, fun, and rewarding. Built for everyone, from first-timers to competitive athletes."
+        ]
     }
 ];

@@ -22,7 +22,7 @@ export default function Home() {
       <section>
         <article className="relative w-full h-[80vh] flex items-center justify-center">
           <video
-            src='/images/hero-video.mov'
+            src='/images/revolution-hero.mp4'
             className="absolute inset-0 w-full h-full object-cover"
             muted
             autoPlay
