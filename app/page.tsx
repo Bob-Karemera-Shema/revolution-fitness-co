@@ -1,7 +1,8 @@
 import Image from "next/image";
-import { Button } from "./components/button";
 import Link from "next/link";
 import type { Metadata } from "next";
+import { Button } from "./components/button";
+import { trainers } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Revolution Fitness Co. | Gym in Cambridge Science Park",
@@ -107,7 +108,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* <section id="personal-training" className="flex flex-col lg:flex-row bg-foreground text-background border-b border-background">
+      <section id="personal-training" className="flex flex-col lg:flex-row bg-foreground text-background border-b border-background">
         <article className="p-10 pb-0 lg:pb-10 lg:pl-16 lg:pr-5 lg:border-r border-background">
           <h2 className="flex flex-col text-5xl uppercase font-extrabold tracking-tighter md:whitespace-nowrap">
             <span>Meet our</span>
@@ -117,7 +118,7 @@ export default function Home() {
 
         <article className="w-full flex lg:items-center gap-20 p-10 lg:pr-16">
           <p className="font-medium">
-            Our team of personal trainers brings together over 30 years of combined experience, with expertise in strength and conditioning as well as mobility training. Let our highly qualified trainers create a realistic, personalised, and achievable programme tailored to help you reach your goals in both the gym and studio environment.
+            Our team of personal trainers brings together over 44 years of combined experience, spanning functional and strength training, competitive powerlifting, Hyrox coaching, and clinical sports therapy. From building strength and improving body composition to injury rehabilitation and long-term performance, our trainers create a realistic, personalised, and achievable programme tailored to help you reach your goals in both the gym and studio environment.
           </p>
         </article>
       </section>
@@ -125,16 +126,33 @@ export default function Home() {
       <section className="grid grid-cols-1 lg:grid-cols-3 gap-8 bg-foreground text-background py-16 px-12">
         {
           trainers.map((trainer) => (
-            <article key={trainer.name + trainer.img} className="space-y-4 w-full group">
+            <article key={trainer.name + trainer.email} className="space-y-4 w-full group">
               <div className="rounded-lg overflow-hidden border border-background w-full">
-                <Image src={trainer.img} alt={trainer.name} width={trainer.width} height={trainer.height} className="w-full object-cover group-hover:scale-110 transition-transform duration-300 ease-in-out" />
+                <Image
+                  src={trainer.giff}
+                  alt={trainer.name}
+                  width={trainer.width}
+                  height={trainer.height}
+                  unoptimized
+                  className="w-full object-cover group-hover:scale-110 transition-transform duration-300 ease-in-out"
+                />
               </div>
               <h3 className="text-2xl font-extrabold px-2 uppercase">{trainer.name}</h3>
               <p className="px-2 font-medium">{trainer.description}</p>
+              <p className="px-2 font-medium">
+                Reach out via&nbsp;
+                <Link href={trainer.instagram} className="text-[#F77737]" aria-label={`${trainer.name}'s instagram`} target="_blank" rel="noopener noreferrer">
+                  Instagram
+                </Link>
+                &nbsp;or&nbsp;
+                <Link href={`mailto::${trainer.email}`} className="text-[#4285F4]" aria-label={`${trainer.name}'s email`} target="_blank" rel="noopener noreferrer">
+                  Email
+                </Link>
+              </p>
             </article>
           ))
         }
-      </section> */}
+      </section>
     </main>
   );
 }

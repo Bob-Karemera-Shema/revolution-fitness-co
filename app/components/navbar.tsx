@@ -40,7 +40,7 @@ export const Navbar = () => {
                 }
             </ul>
 
-            <button className="px-6 flex items-center cursor-pointer xl:hidden border-l border-divider-gray" onClick={toggleMenu} aria-label="Toggle Menu">
+            <button type="button" className="px-6 flex items-center cursor-pointer xl:hidden border-l border-divider-gray" onClick={toggleMenu} aria-label="Toggle Menu">
                 <div className="w-10 h-7 z-10 flex flex-col items-center justify-between">
                     {
                         new Array(3).fill(0).map((_, index) => (

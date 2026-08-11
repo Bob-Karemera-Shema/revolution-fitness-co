@@ -3,10 +3,10 @@ export const navigationLinks = [
         label: "Classes",
         href: "/classes"
     },
-    // {
-    //     label: "Personal Training",
-    //     href: "/#personal-training"
-    // },
+    {
+        label: "Personal Training",
+        href: "/#personal-training"
+    },
     {
         label: "Memberships",
         href: "/membership-plans"
@@ -54,9 +54,9 @@ export const membershipPlans = [
         frequency: "Monthly"
     },
     {
-        name: "10 Day Trail",
+        name: "14 Day Trail",
         price: "30.00",
-        description: "This 10 day trial is designed for you to see if we fit into your routine, experience a new training style, meet the coaching team and be part of our community. To get set up please email or pop by the gym.",
+        description: "This 14 day trial is designed for you to see if we fit into your routine, experience a new training style, meet the coaching team and be part of our community. To get set up please email or pop by the gym.",
         frequency: "10 Days"
     },
     {
@@ -69,25 +69,34 @@ export const membershipPlans = [
 
 export const trainers = [
     {
-        name: "Roy Essandoh",
-        description: "Roy is an experienced fitness and sports performance specialist with expertise in weight training, strength and conditioning, sports performance, massage and sports therapy, and postural assessment and rehabilitation. With advanced qualifications in personal training, clinical sports therapy, nutrition, and athletic performance, Roy is dedicated to helping clients improve performance, recover effectively, and achieve their health and fitness goals.",
-        img: "/images/roy.jpg",
-        width: 640,
-        height: 480
+        name: "Callum Osborne",
+        role: "Operations and Gym Manager",
+        description: "Callum specialises in functional training, strength training, and group training, with a focus on promoting balance across his clients' fitness. Qualified as a Level 3 Personal Trainer, Level 2 Fitness Instructor, Hyrox Coach, and Kettlebell Trainer, he brings over 15 years of experience helping clients build strength, move better, and train with purpose.",
+        instagram: "https://www.instagram.com/callumosborne.fitness/",
+        email: "callumosborne.fitness@gmail.com",
+        giff: "/images/callum-giff.gif",
+        width: 541,
+        height: 676
     },
     {
         name: "Adam Cook",
-        description: "Adam specialises in body composition and weight management, strength training, powerlifting, and nutrition guidance. With experience in powerlifting competition preparation and qualifications in personal training, exercise referral, and group fitness instruction, he helps clients build strength, improve performance, and work toward sustainable health and fitness goals.",
-        img: "/images/adam.jpg",
-        width: 640,
-        height: 480
+        role: "Assistant gym manager",
+        description: "Adam specialises in strength training, body composition and weight loss, and promoting balance and wellbeing. With a background in competitive powerlifting and qualifications as a Level 3 Personal Trainer, Level 2 Gym Instructor, and Hyrox Coach, he draws on over 9 years of experience to help clients build strength, improve performance, and work toward sustainable health and fitness goals.",
+        instagram: "https://www.instagram.com/adamcookpt/",
+        email: "Adamcookpt@gmail.com",
+        giff: "/images/adam-giff.gif",
+        width: 819,
+        height: 1024
     },
     {
-        name: "Rhys Webb",
-        description: "Rhys is passionate about health and fitness and brings energy and enthusiasm to every session. He enjoys leading group fitness classes and is always on the gym floor motivating and supporting members to achieve their goals. With qualifications in personal training, fitness instruction, circuit training, and kettlebell coaching, Rhys helps create a positive and encouraging environment for all fitness levels.",
-        img: "/images/rhys.jpg",
-        width: 383,
-        height: 287
+        name: "Roy Essandoh",
+        role: "Personal trainer & Sports Therapist ",
+        description: "Roy specialises in clinical sports therapy, strength and conditioning, and advanced personal training. As a Level 5 Clinical Sports Therapist, accredited S&C Coach, and Advanced Personal Trainer, he brings over 20 years of experience supporting clients through injury rehabilitation, performance development, and long-term physical resilience.",
+        instagram: "https://www.instagram.com/physi_kal_s_t/",
+        email: "roy@physi-kal.co.uk",
+        giff: "/images/roy-giff.gif",
+        width: 797,
+        height: 996
     }
 ];
 
