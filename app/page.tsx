@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { Button } from "./components/button";
-import { trainers } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Revolution Fitness Co. | Gym in Cambridge Science Park",
@@ -97,61 +96,35 @@ export default function Home() {
       </section>
 
       <section className="h-160 w-full relative">
-        <Image src="/images/studio-coming.jpg" loading="eager" alt="Studio Coming Soon" width={1280} height={853} className="absolute inset-0 w-full h-full object-cover" />
+        <Image src="/images/wellness-upcoming.jpg" loading="eager" alt="Wellness Space Coming Soon" width={1280} height={853} className="absolute inset-0 w-full h-full object-cover" />
         <div className="w-full h-full relative z-10 flex flex-col items-center justify-center gap-4 text-center bg-black/40">
         <h2 className="text-5xl uppercase font-bold tracking-tighter text-brand-green">
-          Brand New Gym Coming Soon
+          Wellness Space Coming Soon
         </h2>
         <p className="text-xl font-medium max-w-2xl">
-          Stay tuned for our new upgraded gym including elegantly designed spaces, fueled by Techno GYM equipment.
+          Stay tuned for our new upgraded wellness space.
         </p>
         </div>
       </section>
 
-      <section id="personal-training" className="flex flex-col lg:flex-row bg-foreground text-background border-b border-background">
+      <section id="personal-training" className="flex flex-col lg:flex-row bg-foreground text-background">
         <article className="p-10 pb-0 lg:pb-10 lg:pl-16 lg:pr-5 lg:border-r border-background">
           <h2 className="flex flex-col text-5xl uppercase font-extrabold tracking-tighter md:whitespace-nowrap">
-            <span>Meet our</span>
-            <span>trainers</span>
+            <span>Hyrox Sim</span>
+            <span>Event</span>
           </h2>
         </article>
 
-        <article className="w-full flex lg:items-center gap-20 p-10 lg:pr-16">
+        <article className="w-full flex flex-col lg:flex-row lg:items-center justify-between gap-20 p-10 lg:pr-16">
           <p className="font-medium">
-            Our team of personal trainers brings together over 44 years of combined experience, spanning functional and strength training, competitive powerlifting, Hyrox coaching, and clinical sports therapy. From building strength and improving body composition to injury rehabilitation and long-term performance, our trainers create a realistic, personalised, and achievable programme tailored to help you reach your goals in both the gym and studio environment.
+            Get race ready with our full HYROX Doubles simulation: 8 x 1km runs and 8 functional stations, run to official race standards with coaches on hand throughout. Whether you&apos;re chasing a PB, racing for the first time, or just want to experience race day in a supportive environment, it&apos;s the perfect chance to practise your pacing and sharpen your strategy. 8:00am–2:30pm, £40 per pair, members and non-members welcome. Spaces are limited, BOOK NOW!
           </p>
+          <Link href="https://www.tickettailor.com/events/revolutionfitnessco/2315140" target="_blank" rel="noopener noreferrer" aria-label="Hyrox Simulation booking" className="lg:self-end">
+            <Button type="secondary" className="w-fit whitespace-nowrap">
+              BOOK NOW
+            </Button>
+          </Link>
         </article>
-      </section>
-
-      <section className="grid grid-cols-1 lg:grid-cols-3 gap-8 bg-foreground text-background py-16 px-12">
-        {
-          trainers.map((trainer) => (
-            <article key={trainer.name + trainer.email} className="space-y-4 w-full group">
-              <div className="rounded-lg overflow-hidden border border-background w-full">
-                <Image
-                  src={trainer.giff}
-                  alt={trainer.name}
-                  width={trainer.width}
-                  height={trainer.height}
-                  unoptimized
-                  className="w-full object-cover group-hover:scale-110 transition-transform duration-300 ease-in-out"
-                />
-              </div>
-              <h3 className="text-2xl font-extrabold px-2 uppercase">{trainer.name}</h3>
-              <p className="px-2 font-medium">{trainer.description}</p>
-              <p className="px-2 font-medium">
-                Reach out via&nbsp;
-                <Link href={trainer.instagram} className="text-[#F77737]" aria-label={`${trainer.name}'s instagram`} target="_blank" rel="noopener noreferrer">
-                  Instagram
-                </Link>
-                &nbsp;or&nbsp;
-                <Link href={`mailto::${trainer.email}`} className="text-[#4285F4]" aria-label={`${trainer.name}'s email`} target="_blank" rel="noopener noreferrer">
-                  Email
-                </Link>
-              </p>
-            </article>
-          ))
-        }
       </section>
     </main>
   );

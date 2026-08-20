@@ -28,7 +28,7 @@ export const Navbar = () => {
                 }
             </ul>
 
-            <ul className={`w-full h-screen bg-background absolute top-0 z-9 pt-25 flex flex-col items-center gap-10 transition-all duration-300 xl:hidden ${isOpen ? "translate-y-0" : "-translate-y-full pointer-events-none"}`}>
+            <ul className={`w-full h-screen bg-background absolute top-0 z-11 pt-25 flex flex-col items-center gap-10 transition-all duration-300 xl:hidden ${isOpen ? "translate-y-0" : "-translate-y-full pointer-events-none"}`}>
                 {
                     navigationLinks.map((link) => (
                         <li key={link.href + link.label} className={`flex items-center justify-center`}>
@@ -41,7 +41,7 @@ export const Navbar = () => {
             </ul>
 
             <button type="button" className="px-6 flex items-center cursor-pointer xl:hidden border-l border-divider-gray" onClick={toggleMenu} aria-label="Toggle Menu">
-                <div className="w-10 h-7 z-10 flex flex-col items-center justify-between">
+                <div className="w-10 h-7 z-12 flex flex-col items-center justify-between">
                     {
                         new Array(3).fill(0).map((_, index) => (
                             <div
