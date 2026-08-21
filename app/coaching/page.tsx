@@ -1,12 +1,26 @@
 import { trainers } from "@/lib/data";
 import Image from "next/image";
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Coaching",
+    description:
+        "Meet the Revolution Fitness Co. coaching team: personal trainers spanning functional and strength training, Hyrox coaching, powerlifting and sports therapy.",
+    alternates: { canonical: "/coaching" },
+    openGraph: {
+        title: "Coaching | Revolution Fitness Co.",
+        description:
+            "Meet the Revolution Fitness Co. coaching team: personal trainers spanning functional and strength training, Hyrox coaching, powerlifting and sports therapy.",
+        url: "/coaching",
+    },
+};
 
 export default function Coaching() {
     return (
         <main className="space-y-8">
             <h1 className="mt-20 text-4xl uppercase text-center font-bold mx-10 md:mx-20 pb-4 border-b border-gray-600">
-                Personal Training/Coaching Team
+                Personal Training / Coaching Team
             </h1>
 
             <section className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-10 px-12">

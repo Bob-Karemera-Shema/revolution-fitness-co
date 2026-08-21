@@ -69,7 +69,7 @@ export const membershipPlans = [
 
 export const trainers = [
     {
-        name: "Callum Osborne",
+        name: "Callum",
         role: "Operations and Gym Manager",
         description: "Callum specialises in functional training, strength training, and group training, with a focus on promoting balance across his clients' fitness. Qualified as a Level 3 Personal Trainer, Level 2 Fitness Instructor, Hyrox Coach, and Kettlebell Trainer, he brings over 15 years of experience helping clients build strength, move better, and train with purpose.",
         instagram: "https://www.instagram.com/callumosborne.fitness/",
@@ -79,7 +79,7 @@ export const trainers = [
         height: 676
     },
     {
-        name: "Adam Cook",
+        name: "Adam",
         role: "Assistant gym manager",
         description: "Adam specialises in strength training, body composition and weight loss, and promoting balance and wellbeing. With a background in competitive powerlifting and qualifications as a Level 3 Personal Trainer, Level 2 Gym Instructor, and Hyrox Coach, he draws on over 9 years of experience to help clients build strength, improve performance, and work toward sustainable health and fitness goals.",
         instagram: "https://www.instagram.com/adamcookpt/",
@@ -89,9 +89,9 @@ export const trainers = [
         height: 1024
     },
     {
-        name: "Roy Essandoh",
+        name: "Roy",
         role: "Personal trainer & Sports Therapist ",
-        description: "Roy specialises in clinical sports therapy, strength and conditioning, and advanced personal training. As a Level 5 Clinical Sports Therapist, accredited S&C Coach, and Advanced Personal Trainer, he brings over 20 years of experience supporting clients through injury rehabilitation, performance development, and long-term physical resilience.",
+        description: "Roy specialises in clinical sports therapy, strength and conditioning, and advanced personal training. As a Level 5 Clinical Sports Therapist, accredited S&C Coach, and Advanced Personal Trainer, he brings over 20 years of experience supporting clients through injury rehabilitation, performance development, and long-term physical resilience. His rehabilitation work combines hands-on manual therapy — massage, cupping, acupuncture, and blading — with targeted strength and conditioning in the gym, helping clients recover from injury and build a stronger, more injury-resistant body. Treatments include deep tissue, sports, oncology, and hot stone massage, alongside dry cupping, acupuncture and dry needling, IASTM blading, and lymphatic drainage.",
         instagram: "https://www.instagram.com/physi_kal_s_t/",
         email: "roy@physi-kal.co.uk",
         giff: "/images/roy-giff.gif",
@@ -121,7 +121,7 @@ export const trainers = [
     {
         name: "Christina",
         role: "Personal Trainer/Coach",
-        description: "",
+        description: "I specialise in strength training, rehabilitation, and helping clients move better and feel stronger. As a Level 4 Personal Trainer and qualified Yoga Teacher with over 15 years of experience, I combine my knowledge of biomechanics and neuroscience with a holistic, individual approach to training. My goal is simple: to build an approach that works for you, your body, your goals, and your life, while keeping your risk of injury as low as possible.",
         instagram: "https://www.instagram.com/christina.mkk.coaching/",
         email: "chris.mkk@hotmail.co.uk",
         giff: "/images/christina-giff.gif",
