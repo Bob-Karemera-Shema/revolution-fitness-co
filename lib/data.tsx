@@ -91,7 +91,7 @@ export const trainers = [
     {
         name: "Roy",
         role: "Personal trainer & Sports Therapist ",
-        description: "Roy specialises in clinical sports therapy, strength and conditioning, and advanced personal training. As a Level 5 Clinical Sports Therapist, accredited S&C Coach, and Advanced Personal Trainer, he brings over 20 years of experience supporting clients through injury rehabilitation, performance development, and long-term physical resilience. His rehabilitation work combines hands-on manual therapy — massage, cupping, acupuncture, and blading — with targeted strength and conditioning in the gym, helping clients recover from injury and build a stronger, more injury-resistant body. Treatments include deep tissue, sports, oncology, and hot stone massage, alongside dry cupping, acupuncture and dry needling, IASTM blading, and lymphatic drainage.",
+        description: "Roy specialises in clinical sports therapy, strength and conditioning, and advanced personal training. As a Level 5 Clinical Sports Therapist, accredited S&C Coach, and Advanced Personal Trainer, he brings over 20 years of experience supporting clients through injury rehabilitation, performance development, and long-term physical resilience.",
         instagram: "https://www.instagram.com/physi_kal_s_t/",
         email: "roy@physi-kal.co.uk",
         giff: "/images/roy-giff.gif",
@@ -216,6 +216,14 @@ export const services = [
         img: "/images/wellness.png",
         width: 4500,
         height: 4500,
+        href: "mailto:Roy@physical-kal.co.uk"
+    },
+    {
+        name: "PHYSI-KAL Sports Therapy",
+        description: "Roy specialises in injury rehabilitation, combining hands-on treatment with strength and conditioning to get you back to full health and keep you there. Treatments include deep tissue and sports massage, oncology massage, hot stone massage, dry cupping, dry needling and acupuncture, IASTM blading, and lymphatic drainage, chosen and tailored to what your body actually needs. Alongside that, Roy works with clients in the gym on strength and conditioning, because recovery isn't finished until you've built a stronger, more injury-resistant body. Whether you're coming back from a setback, managing ongoing pain, or training toward a goal, the aim is the same: get you moving well again, and keep you there.",
+        img: "/images/roys-logo.jpeg",
+        width: 1354,
+        height: 2048,
         href: "mailto:Roy@physical-kal.co.uk"
     },
     {

@@ -28,7 +28,7 @@ export default function WhatWeOffer() {
                 {
                     services.map((service, index) => (
                         <article key={service.name + index} className={`grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10 border border-divider-gray`}>
-                            <div className={`relative h-90 w-full border-b lg:border-b-0 border-r border-divider-gray ${service.name.toLowerCase() === 'physiobab' && 'bg-foreground'}`}>
+                            <div className={`relative min-h-90 w-full border-b lg:border-b-0 border-r border-divider-gray ${service.name.toLowerCase() === 'physiobab' && 'bg-foreground'}`}>
                                 <Image src={service.img} loading="eager" alt={service.name} width={service.width} height={service.height} className={`w-full h-full object-contain ${service.name.toLowerCase() !== 'hyrox' && 'lg:object-cover'}`} />
                             </div>
                             <div className="flex flex-col justify-center gap-4 p-10 xl:col-span-2">
