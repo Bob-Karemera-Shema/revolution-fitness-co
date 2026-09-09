@@ -106,26 +106,6 @@ export default function Home() {
         </p>
         </div>
       </section>
-
-      <section id="personal-training" className="flex flex-col lg:flex-row bg-foreground text-background">
-        <article className="p-10 pb-0 lg:pb-10 lg:pl-16 lg:pr-5 lg:border-r border-background">
-          <h2 className="flex flex-col text-5xl uppercase font-extrabold tracking-tighter md:whitespace-nowrap">
-            <span>Hyrox Sim</span>
-            <span>Event</span>
-          </h2>
-        </article>
-
-        <article className="w-full flex flex-col lg:flex-row lg:items-center justify-between gap-20 p-10 lg:pr-16">
-          <p className="font-medium">
-            Get race ready with our full HYROX Doubles simulation: 8 x 1km runs and 8 functional stations, run to official race standards with coaches on hand throughout. Whether you&apos;re chasing a PB, racing for the first time, or just want to experience race day in a supportive environment, it&apos;s the perfect chance to practise your pacing and sharpen your strategy. 8:00am–2:30pm, £40 per pair, members and non-members welcome. Spaces are limited, BOOK NOW!
-          </p>
-          <Link href="https://www.tickettailor.com/events/revolutionfitnessco/2315140" target="_blank" rel="noopener noreferrer" aria-label="Hyrox Simulation booking" className="lg:self-end">
-            <Button type="secondary" className="w-fit whitespace-nowrap">
-              BOOK NOW
-            </Button>
-          </Link>
-        </article>
-      </section>
     </main>
   );
 }

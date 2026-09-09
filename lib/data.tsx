@@ -73,7 +73,7 @@ export const trainers = [
         role: "Operations and Gym Manager",
         description: "Callum specialises in functional training, strength training, and group training, with a focus on promoting balance across his clients' fitness. Qualified as a Level 3 Personal Trainer, Level 2 Fitness Instructor, Hyrox Coach, and Kettlebell Trainer, he brings over 15 years of experience helping clients build strength, move better, and train with purpose.",
         instagram: "https://www.instagram.com/callumosborne.fitness/",
-        email: "callumosborne.fitness@gmail.com",
+        email: "mailto:callumosborne.fitness@gmail.com",
         giff: "/images/callum-giff.gif",
         width: 541,
         height: 676
@@ -83,7 +83,7 @@ export const trainers = [
         role: "Assistant gym manager",
         description: "Adam specialises in strength training, body composition and weight loss, and promoting balance and wellbeing. With a background in competitive powerlifting and qualifications as a Level 3 Personal Trainer, Level 2 Gym Instructor, and Hyrox Coach, he draws on over 9 years of experience to help clients build strength, improve performance, and work toward sustainable health and fitness goals.",
         instagram: "https://www.instagram.com/adamcookpt/",
-        email: "Adamcookpt@gmail.com",
+        email: "mailto:Adamcookpt@gmail.com",
         giff: "/images/adam-giff.gif",
         width: 819,
         height: 1024
@@ -93,7 +93,7 @@ export const trainers = [
         role: "Personal trainer & Sports Therapist ",
         description: "Roy specialises in clinical sports therapy, strength and conditioning, and advanced personal training. As a Level 5 Clinical Sports Therapist, accredited S&C Coach, and Advanced Personal Trainer, he brings over 20 years of experience supporting clients through injury rehabilitation, performance development, and long-term physical resilience.",
         instagram: "https://www.instagram.com/physi_kal_s_t/",
-        email: "roy@physi-kal.co.uk",
+        email: "mailto:roy@physi-kal.co.uk",
         giff: "/images/roy-giff.gif",
         width: 797,
         height: 996
@@ -103,7 +103,7 @@ export const trainers = [
         role: "Personal Trainer/Coach",
         description: "I’m passionate about helping women build strength, boost their confidence, and feel at home in the gym. Having been on my own fitness journey, I understand how intimidating taking that first step can be, which is why I love helping women discover just how capable they really are. Whether you’re completely new to strength training or looking to take your training to the next level, I’ll support and motivate you every step of the way. I offer both 1-1 and 2-1 personal training, creating fun, challenging sessions. My goal is to help you leave each session feeling stronger, more confident, and proud of what your body can achieve.",
         instagram: "https://www.instagram.com/strivewithmeg_/",
-        email: "meganlouisefitness.uk@gmail.com",
+        email: "mailto:meganlouisefitness.uk@gmail.com",
         giff: "/images/meg-giff.gif",
         width: 668,
         height: 835
@@ -113,7 +113,8 @@ export const trainers = [
         role: "Personal Trainer/Coach",
         description: "Results come from consistency, accountability, and a plan built around you. With nearly a decade of experience in the health and fitness industry, I've helped clients build strength, lose body fat, improve performance, and gain confidence by creating sustainable habits that last. I don't believe in quick fixes or one-size-fits-all programmes — my coaching combines evidence-based strength and functional training with accountability, education, and ongoing support to help you achieve results you can maintain for life. I offer 1-1 personal training, bespoke online coaching, hybrid coaching (1-1 and online), personalised training programmes, nutrition guidance, and weekly accountability and support.",
         instagram: "https://www.instagram.com/1.jrb_/",
-        email: "jrbtraining@hotmail.com",
+        email: "mailto:jrbtraining@hotmail.com",
+        phone: "+44 7586 743450",
         giff: "/images/julyah.gif",
         width: 791,
         height: 989
@@ -123,7 +124,7 @@ export const trainers = [
         role: "Personal Trainer/Coach",
         description: "I specialise in strength training, rehabilitation, and helping clients move better and feel stronger. As a Level 4 Personal Trainer and qualified Yoga Teacher with over 15 years of experience, I combine my knowledge of biomechanics and neuroscience with a holistic, individual approach to training. My goal is simple: to build an approach that works for you, your body, your goals, and your life, while keeping your risk of injury as low as possible.",
         instagram: "https://www.instagram.com/christina.mkk.coaching/",
-        email: "chris.mkk@hotmail.co.uk",
+        email: "mailto:chris.mkk@hotmail.co.uk",
         giff: "/images/christina-giff.gif",
         width: 685,
         height: 857
@@ -134,6 +135,7 @@ export const classSchedule = [
     {
         day: "Mon",
         classes: [
+            { time: "6:00 am", name: "Hyrox", type: "functional" },
             { time: "7:00 am", name: "Hyrox", type: "functional" },
             { time: "12:15 pm", name: "Hyrox", type: "functional" },
             { time: "12:15 pm", name: "Body Con", type: "studio" },
@@ -144,6 +146,7 @@ export const classSchedule = [
     {
         day: "Tue",
         classes: [
+            { time: "6:00 am", name: "Functional Strength", type: "functional" },
             { time: "7:00 am", name: "Functional Strength", type: "functional" },
             { time: "7:15 am", name: "Kettle Bells", type: "studio" },
             { time: "12:15 pm", name: "Functional Strength", type: "functional" },
@@ -155,6 +158,7 @@ export const classSchedule = [
     {
         day: "Wed",
         classes: [
+            { time: "6:00 am", name: "Conditioning", type: "functional" },
             { time: "7:00 am", name: "Conditioning", type: "functional" },
             { time: "12:15 pm", name: "Conditioning", type: "functional" },
             { time: "5:30 pm", name: "Conditioning", type: "functional" },
@@ -164,6 +168,7 @@ export const classSchedule = [
     {
         day: "Thu",
         classes: [
+            { time: "6:00 am", name: "Functional Strength", type: "functional" },
             { time: "7:00 am", name: "Functional Strength", type: "functional" },
             { time: "7:15 am", name: "Body Blast", type: "studio" },
             { time: "12:15 pm", name: "Functional Strength", type: "functional" },
@@ -175,6 +180,7 @@ export const classSchedule = [
     {
         day: "Fri",
         classes: [
+            { time: "6:00 am", name: "Lift & Sweat", type: "functional" },
             { time: "7:00 am", name: "Lift & Sweat", type: "functional" },
             { time: "12:15 pm", name: "Lift & Sweat", type: "functional" },
             { time: "5:30 pm", name: "Lift & Sweat", type: "functional" },
@@ -216,7 +222,7 @@ export const services = [
         img: "/images/wellness.png",
         width: 4500,
         height: 4500,
-        href: "mailto:Roy@physical-kal.co.uk"
+        href: "mailto:roy@physical-kal.co.uk"
     },
     {
         name: "PHYSI-KAL Sports Therapy",
@@ -224,7 +230,7 @@ export const services = [
         img: "/images/roys-logo.jpeg",
         width: 1354,
         height: 2048,
-        href: "mailto:Roy@physical-kal.co.uk"
+        href: "mailto:roy@physi-kal.co.uk"
     },
     {
         name: "PhysioBAB",

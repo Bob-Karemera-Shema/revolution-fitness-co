@@ -52,11 +52,21 @@ export default function Coaching() {
                             <p className="px-2 font-medium">{trainer.description}</p>
                             <p className="px-2 font-medium">
                                 Reach out via&nbsp;
+                                {
+                                    trainer.phone &&
+                                        <>
+                                            <span className="text-brand-green">
+                                                {trainer.phone}
+                                            </span>
+                                            <span>,</span>
+                                            &nbsp;
+                                        </>
+                                }
                                 <Link href={trainer.instagram} className="text-[#F77737]" aria-label={`${trainer.name}'s instagram`} target="_blank" rel="noopener noreferrer">
                                     Instagram
                                 </Link>
                                 &nbsp;or&nbsp;
-                                <Link href={`mailto::${trainer.email}`} className="text-[#4285F4]" aria-label={`${trainer.name}'s email`} target="_blank" rel="noopener noreferrer">
+                                <Link href={trainer.email} className="text-[#4285F4]" aria-label={`${trainer.name}'s email`} target="_blank" rel="noopener noreferrer">
                                     Email
                                 </Link>
                             </p>

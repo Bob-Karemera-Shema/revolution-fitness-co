@@ -53,7 +53,7 @@ export const Footer = () => {
                         <div className="space-y-2">
                             <p className="uppercase text-lg font-extrabold">Gym Hours</p>
                             <ul className="space-y-1">
-                                <li>Mon - Fri: 7:00am - 8:00pm</li>
+                                <li>Mon - Fri: 6:00am - 8:00pm</li>
                                 <li>Sat: 8:00am - 12:00pm</li>
                                 <li>Sun / Bank Holidays: Closed</li>
                             </ul>
